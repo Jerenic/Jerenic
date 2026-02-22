@@ -8,6 +8,7 @@ module.exports = {
       animation: {
         'blob': 'blob 7s infinite',
         'blink': 'blink 1s infinite',
+        'spin-slow': 'spin-slow 8s linear infinite',
       },
       keyframes: {
         blob: {
@@ -18,6 +19,10 @@ module.exports = {
         blink: {
           '0%, 50%': { opacity: '1' },
           '51%, 100%': { opacity: '0' },
+        },
+        'spin-slow': {
+          'from': { transform: 'rotate(0deg)' },
+          'to': { transform: 'rotate(360deg)' },
         },
       },
     },
