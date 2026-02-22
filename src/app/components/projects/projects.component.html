@@ -1,18 +1,104 @@
 <section id="projects" class="py-20 bg-slate-900">
   <div class="container mx-auto px-4">
-    <h2 class="text-4xl font-bold mb-12 text-center">Projekte</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-slate-800 rounded-lg p-6 hover:bg-slate-700 transition-colors">
-        <h3 class="text-2xl font-semibold mb-4">Webshop</h3>
-        <p class="text-slate-300">Beschreibung des Webshop-Projekts</p>
+    <h2 class="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">
+      Projekte
+    </h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+      <!-- Project 1: Webshop Microservices -->
+      <div class="group bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(6,182,212,0.3)] transition-all duration-300">
+        <h3 class="text-2xl font-bold mb-2 text-cyan-400">
+          Webshop Microservices
+        </h3>
+        <p class="text-sm text-purple-400 mb-4 font-mono">
+          Full-Stack E-Commerce System
+        </p>
+        <p class="text-slate-300 leading-relaxed mb-6">
+          Entwicklung einer modularen Webshop-Architektur mit getrennten Services für Inventar und Bestellwesen. Fokus auf Quality Gates (Checkstyle, PMD) und automatisierte CI/CD-Pipelines.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-slate-800 text-xs px-2 py-1 rounded text-cyan-400 border border-slate-700 rounded-full">
+            Spring Boot
+          </span>
+          <span class="bg-slate-800 text-xs px-2 py-1 rounded text-cyan-400 border border-slate-700 rounded-full">
+            PostgreSQL
+          </span>
+          <span class="bg-slate-800 text-xs px-2 py-1 rounded text-cyan-400 border border-slate-700 rounded-full">
+            Docker
+          </span>
+        </div>
       </div>
-      <div class="bg-slate-800 rounded-lg p-6 hover:bg-slate-700 transition-colors">
-        <h3 class="text-2xl font-semibold mb-4">IoT</h3>
-        <p class="text-slate-300">Beschreibung des IoT-Projekts</p>
+
+      <!-- Project 2: Distributed Sensor System -->
+      <div class="group bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:border-purple-500 hover:shadow-[0_0_15px_rgba(168,85,247,0.3)] transition-all duration-300">
+        <h3 class="text-2xl font-bold mb-2 text-purple-400">
+          Distributed Sensor System
+        </h3>
+        <p class="text-sm text-cyan-400 mb-4 font-mono">
+          Cloud & Mobile Integration
+        </p>
+        <p class="text-slate-300 leading-relaxed mb-6">
+          End-to-End System zur Erfassung und Visualisierung von Sensordaten. Sichere Kommunikation zwischen Backend und verschiedenen Clients sowie Echtzeit-Visualisierung.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-slate-800 text-xs px-2 py-1 rounded text-purple-400 border border-slate-700 rounded-full">
+            Spring Cloud
+          </span>
+          <span class="bg-slate-800 text-xs px-2 py-1 rounded text-purple-400 border border-slate-700 rounded-full">
+            Angular
+          </span>
+          <span class="bg-slate-800 text-xs px-2 py-1 rounded text-purple-400 border border-slate-700 rounded-full">
+            Android (Capacitor)
+          </span>
+        </div>
       </div>
-      <div class="bg-slate-800 rounded-lg p-6 hover:bg-slate-700 transition-colors">
-        <h3 class="text-2xl font-semibold mb-4">SPA</h3>
-        <p class="text-slate-300">Beschreibung des SPA-Projekts</p>
+
+      <!-- Project 3: ActiveTogether -->
+      <div class="group bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:border-pink-500 hover:shadow-[0_0_15px_rgba(236,72,153,0.3)] transition-all duration-300">
+        <h3 class="text-2xl font-bold mb-2 text-pink-400">
+          ActiveTogether
+        </h3>
+        <p class="text-sm text-cyan-400 mb-4 font-mono">
+          Reactive SPA für Kursverwaltung
+        </p>
+        <p class="text-slate-300 leading-relaxed mb-6">
+          Single Page Application zur effizienten Verwaltung von Sportkursen. Modernes State-Management mit Signals und ein responsives UI-Design für optimale User Experience.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-slate-800 text-xs px-2 py-1 rounded text-pink-400 border border-slate-700 rounded-full">
+            Angular (v17+)
+          </span>
+          <span class="bg-slate-800 text-xs px-2 py-1 rounded text-pink-400 border border-slate-700 rounded-full">
+            RxJS
+          </span>
+          <span class="bg-slate-800 text-xs px-2 py-1 rounded text-pink-400 border border-slate-700 rounded-full">
+            Signals
+          </span>
+        </div>
+      </div>
+
+      <!-- Project 4: IoT Environment Monitor -->
+      <div class="group bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(6,182,212,0.3)] transition-all duration-300">
+        <h3 class="text-2xl font-bold mb-2 text-cyan-400">
+          IoT Environment Monitor
+        </h3>
+        <p class="text-sm text-purple-400 mb-4 font-mono">
+          Python & MQTT
+        </p>
+        <p class="text-slate-300 leading-relaxed mb-6">
+          Vernetztes Messsystem auf Basis des JoyPi zur Überwachung von Umgebungsdaten. Stabiles Pub/Sub-Messaging an ein zentrales Monitoring-System.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-slate-800 text-xs px-2 py-1 rounded text-cyan-400 border border-slate-700 rounded-full">
+            Python
+          </span>
+          <span class="bg-slate-800 text-xs px-2 py-1 rounded text-cyan-400 border border-slate-700 rounded-full">
+            MQTT
+          </span>
+          <span class="bg-slate-800 text-xs px-2 py-1 rounded text-cyan-400 border border-slate-700 rounded-full">
+            Raspberry Pi
+          </span>
+        </div>
       </div>
     </div>
   </div>
