@@ -1,0 +1,20 @@
+// Hover lift effect for category cards
+.group:hover {
+  transform: translateY(-4px);
+}
+
+// Smooth transition for transform
+.group {
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+// Skill pill hover glow effect
+.skill-pill:hover {
+  box-shadow: 0 0 10px currentColor;
+  transform: scale(1.05);
+}
+
+.skill-pill {
+  transition: all 0.2s ease;
+  cursor: default;
+}
