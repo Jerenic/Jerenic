@@ -3,12 +3,12 @@
     <div class="max-w-3xl mx-auto text-center">
       <!-- Headline -->
       <h2 class="text-4xl md:text-5xl font-bold mb-4 text-neutral-100">
-        Lass uns schreiben.
+        {{ 'FOOTER.TITLE' | translate }}
       </h2>
       
       <!-- Subheadline -->
       <p class="text-lg text-neutral-400 mb-10">
-        Ich bin aktuell auf der Suche nach einem Praktikum oder einer Junior-Position. Mein Postfach ist immer offen!
+        {{ 'FOOTER.SUBTITLE' | translate }}
       </p>
 
       <!-- Main Action Buttons -->
@@ -18,7 +18,7 @@
           href="mailto:jeremy.heissenberger@gmail.com" 
           class="cta-button bg-neutral-900 border border-neutral-800 text-neutral-100 hover:border-neutral-600 font-semibold px-8 py-3 rounded-md transition-colors"
         >
-          Email senden
+          {{ 'FOOTER.EMAIL' | translate }}
         </a>
 
         <!-- GitHub Button -->
@@ -28,13 +28,13 @@
           rel="noopener noreferrer"
           class="cta-button border border-neutral-800 text-neutral-300 hover:border-neutral-600 hover:text-neutral-100 font-semibold px-8 py-3 rounded-md transition-colors"
         >
-          GitHub Profil
+          {{ 'FOOTER.GITHUB' | translate }}
         </a>
       </div>
 
       <!-- CV Download Buttons Group -->
       <div class="mb-12">
-        <p class="text-sm text-neutral-500 mb-4">Lebenslauf herunterladen:</p>
+        <p class="text-sm text-neutral-500 mb-4">{{ 'FOOTER.CV_DOWNLOAD' | translate }}</p>
         <div class="flex flex-col sm:flex-row gap-3 justify-center items-center flex-wrap">
           <!-- CV Austria -->
           <a 
@@ -42,7 +42,7 @@
             target="_blank"
             class="cv-button border border-neutral-800 text-neutral-300 hover:border-neutral-600 hover:text-neutral-100 text-sm font-medium px-4 py-2 rounded-md transition-colors"
           >
-            CV (Österreich)
+            {{ 'FOOTER.CV_AT' | translate }}
           </a>
 
           <!-- CV DACH -->
@@ -51,7 +51,7 @@
             target="_blank"
             class="cv-button border border-neutral-800 text-neutral-300 hover:border-neutral-600 hover:text-neutral-100 text-sm font-medium px-4 py-2 rounded-md transition-colors"
           >
-            CV (DACH)
+            {{ 'FOOTER.CV_DACH' | translate }}
           </a>
 
           <!-- CV International -->
@@ -60,7 +60,7 @@
             target="_blank"
             class="cv-button border border-neutral-800 text-neutral-300 hover:border-neutral-600 hover:text-neutral-100 text-sm font-medium px-4 py-2 rounded-md transition-colors"
           >
-            CV (International)
+            {{ 'FOOTER.CV_EN' | translate }}
           </a>
         </div>
       </div>
@@ -68,7 +68,7 @@
       <!-- Separator -->
       <div class="border-t border-neutral-800 mt-12 pt-8">
         <p class="text-sm text-neutral-500">
-          © 2026 Jeremy Nicolas Heißenberger. Built with Angular 17 & Tailwind CSS.
+          {{ 'FOOTER.COPYRIGHT' | translate }}
         </p>
       </div>
     </div>

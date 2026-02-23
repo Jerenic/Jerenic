@@ -1,0 +1,60 @@
+{
+  "HERO": {
+    "TERMINAL": "terminal",
+    "WHOAMI": "whoami",
+    "CAT_ABOUT": "cat about.txt",
+    "ROLE": "Software Engineering Student",
+    "DESCRIPTION": "Building modern web applications",
+    "VIEW_PROJECTS": "> view_projects",
+    "CONTACT_ME": "> contact_me"
+  },
+  "ABOUT": {
+    "TITLE": "Über mich",
+    "NAME": "Jeremy Heissenberger",
+    "SUBTITLE": "Software Engineering Student | Java Backend & Angular",
+    "BIO": "Ich bin ein motivierter angehender Softwareentwickler mit Schwerpunkt auf Java-Backend und modernen Web-Technologien. Durch intensive Hochschulprojekte an der FH Burgenland habe ich praktische Erfahrung in der Entwicklung von Microservices und reaktiven Frontends gesammelt. Aktuell suche ich ein Praktikum oder eine Junior-Position, um meine Kenntnisse in professionellen CI/CD-Umgebungen einzubringen und reale Projekte voranzutreiben.",
+    "TAG_JAVA": "> Java / Spring Boot",
+    "TAG_ANGULAR": "> Angular / RxJS",
+    "TAG_DOCKER": "> Docker / CI/CD"
+  },
+  "PROJECTS": {
+    "TITLE": "Projekte",
+    "WEBSHOP": {
+      "TITLE": "Webshop Microservices",
+      "SUBTITLE": "Full-Stack E-Commerce System",
+      "DESCRIPTION": "Entwicklung einer modularen Webshop-Architektur mit getrennten Services für Inventar und Bestellwesen. Fokus auf Quality Gates (Checkstyle, PMD) und automatisierte CI/CD-Pipelines."
+    },
+    "SENSOR": {
+      "TITLE": "Distributed Sensor System",
+      "SUBTITLE": "Cloud & Mobile Integration",
+      "DESCRIPTION": "End-to-End System zur Erfassung und Visualisierung von Sensordaten. Sichere Kommunikation zwischen Backend und verschiedenen Clients sowie Echtzeit-Visualisierung."
+    },
+    "ACTIVE": {
+      "TITLE": "ActiveTogether",
+      "SUBTITLE": "Reactive SPA für Kursverwaltung",
+      "DESCRIPTION": "Single Page Application zur effizienten Verwaltung von Sportkursen. Modernes State-Management mit Signals und ein responsives UI-Design für optimale User Experience."
+    },
+    "IOT": {
+      "TITLE": "IoT Environment Monitor",
+      "SUBTITLE": "Python & MQTT",
+      "DESCRIPTION": "Vernetztes Messsystem auf Basis des JoyPi zur Überwachung von Umgebungsdaten. Stabiles Pub/Sub-Messaging an ein zentrales Monitoring-System."
+    }
+  },
+  "SKILLS": {
+    "TITLE": "Tech Stack & Skills",
+    "BACKEND": ">_ Backend",
+    "FRONTEND": ">_ Frontend",
+    "DEVOPS": ">_ DevOps & Tools"
+  },
+  "FOOTER": {
+    "TITLE": "Lass uns schreiben.",
+    "SUBTITLE": "Ich bin aktuell auf der Suche nach einem Praktikum oder einer Junior-Position. Mein Postfach ist immer offen!",
+    "EMAIL": "Email senden",
+    "GITHUB": "GitHub Profil",
+    "CV_DOWNLOAD": "Lebenslauf herunterladen:",
+    "CV_AT": "CV (Österreich)",
+    "CV_DACH": "CV (DACH)",
+    "CV_EN": "CV (International)",
+    "COPYRIGHT": "© 2026 Jeremy Nicolas Heißenberger. Built with Angular 17 & Tailwind CSS."
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "HERO": {
+    "TERMINAL": "terminal",
+    "WHOAMI": "whoami",
+    "CAT_ABOUT": "cat about.txt",
+    "ROLE": "Software Engineering Student",
+    "DESCRIPTION": "Building modern web applications",
+    "VIEW_PROJECTS": "> view_projects",
+    "CONTACT_ME": "> contact_me"
+  },
+  "ABOUT": {
+    "TITLE": "About Me",
+    "NAME": "Jeremy Heissenberger",
+    "SUBTITLE": "Software Engineering Student | Java Backend & Angular",
+    "BIO": "I am a motivated aspiring software developer with a focus on Java backend and modern web technologies. Through intensive university projects at FH Burgenland, I have gained practical experience in developing microservices and reactive frontends. I am currently looking for an internship or junior position to apply my knowledge in professional CI/CD environments and advance real-world projects.",
+    "TAG_JAVA": "> Java / Spring Boot",
+    "TAG_ANGULAR": "> Angular / RxJS",
+    "TAG_DOCKER": "> Docker / CI/CD"
+  },
+  "PROJECTS": {
+    "TITLE": "Projects",
+    "WEBSHOP": {
+      "TITLE": "Webshop Microservices",
+      "SUBTITLE": "Full-Stack E-Commerce System",
+      "DESCRIPTION": "Development of a modular webshop architecture with separate services for inventory and order management. Focus on quality gates (Checkstyle, PMD) and automated CI/CD pipelines."
+    },
+    "SENSOR": {
+      "TITLE": "Distributed Sensor System",
+      "SUBTITLE": "Cloud & Mobile Integration",
+      "DESCRIPTION": "End-to-end system for capturing and visualizing sensor data. Secure communication between backend and various clients as well as real-time visualization."
+    },
+    "ACTIVE": {
+      "TITLE": "ActiveTogether",
+      "SUBTITLE": "Reactive SPA for Course Management",
+      "DESCRIPTION": "Single Page Application for efficient management of sports courses. Modern state management with Signals and a responsive UI design for optimal user experience."
+    },
+    "IOT": {
+      "TITLE": "IoT Environment Monitor",
+      "SUBTITLE": "Python & MQTT",
+      "DESCRIPTION": "Networked measurement system based on JoyPi for monitoring environmental data. Stable pub/sub messaging to a central monitoring system."
+    }
+  },
+  "SKILLS": {
+    "TITLE": "Tech Stack & Skills",
+    "BACKEND": ">_ Backend",
+    "FRONTEND": ">_ Frontend",
+    "DEVOPS": ">_ DevOps & Tools"
+  },
+  "FOOTER": {
+    "TITLE": "Let's get in touch.",
+    "SUBTITLE": "I am currently looking for an internship or junior position. My inbox is always open!",
+    "EMAIL": "Send Email",
+    "GITHUB": "GitHub Profile",
+    "CV_DOWNLOAD": "Download Resume:",
+    "CV_AT": "CV (Austria)",
+    "CV_DACH": "CV (DACH)",
+    "CV_EN": "CV (International)",
+    "COPYRIGHT": "© 2026 Jeremy Nicolas Heißenberger. Built with Angular 17 & Tailwind CSS."
+  }
+}
