@@ -1,13 +1,51 @@
-<footer id="contact" class="py-12 bg-slate-900 border-t border-slate-700">
+<footer id="contact" class="py-16 bg-slate-900">
   <div class="container mx-auto px-4">
-    <div class="flex flex-col md:flex-row justify-between items-center">
-      <div class="mb-4 md:mb-0">
-        <p class="text-slate-400">&copy; 2025 Jerenic. Alle Rechte vorbehalten.</p>
+    <div class="max-w-3xl mx-auto text-center">
+      <!-- Headline -->
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">
+        Lass uns schreiben.
+      </h2>
+      
+      <!-- Subheadline -->
+      <p class="text-lg text-slate-400 mb-10">
+        Ich bin aktuell auf der Suche nach einem Praktikum oder einer Junior-Position. Mein Postfach ist immer offen!
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
+        <!-- Email Button -->
+        <a 
+          href="mailto:jeremy.heissenberger@gmail.com" 
+          class="cta-button bg-cyan-600 hover:bg-cyan-500 text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 hover:shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:scale-105"
+        >
+          Email senden
+        </a>
+
+        <!-- GitHub Button -->
+        <a 
+          href="https://github.com/Jerenic" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="cta-button border border-slate-600 hover:border-purple-500 text-slate-300 hover:text-purple-400 font-semibold px-8 py-3 rounded-lg transition-all duration-300 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] hover:scale-105"
+        >
+          GitHub Profil
+        </a>
+
+        <!-- CV Download Button -->
+        <a 
+          href="/assets/Heissenberger_CV.pdf" 
+          target="_blank"
+          class="cta-button border border-slate-600 hover:border-pink-500 text-slate-300 hover:text-pink-400 font-semibold px-8 py-3 rounded-lg transition-all duration-300 hover:shadow-[0_0_20px_rgba(236,72,153,0.3)] hover:scale-105"
+        >
+          Lebenslauf (PDF)
+        </a>
       </div>
-      <div class="flex gap-6">
-        <a href="#" class="text-slate-400 hover:text-white transition-colors">Kontakt</a>
-        <a href="#" class="text-slate-400 hover:text-white transition-colors">GitHub</a>
-        <a href="#" class="text-slate-400 hover:text-white transition-colors">LinkedIn</a>
+
+      <!-- Separator -->
+      <div class="border-t border-slate-800 mt-12 pt-8">
+        <p class="text-sm text-slate-500">
+          © 2026 Jeremy Nicolas Heißenberger. Built with Angular 17 & Tailwind CSS.
+        </p>
       </div>
     </div>
   </div>
