@@ -11,18 +11,18 @@
           <h3 class="text-2xl font-bold text-neutral-100">
             {{ 'PROJECTS.GAMICODE.TITLE' | translate }}
           </h3>
-          @if (('PROJECTS.GAMICODE.STATUS' | translate) === 'GITHUB') {
-            <a [href]="'PROJECTS.GAMICODE.URL' | translate" 
+          @if (getProjectStatus('GAMICODE') === 'GITHUB') {
+            <a [href]="getProjectUrl('GAMICODE')" 
                target="_blank" 
                rel="noopener noreferrer"
                class="text-neutral-400 hover:text-neutral-100 text-sm transition-colors flex items-center gap-1">
               {{ 'PROJECTS.PROJECT_STATUS.GITHUB' | translate }}
             </a>
-          } @else if (('PROJECTS.GAMICODE.STATUS' | translate) === 'PRIVATE') {
+          } @else if (getProjectStatus('GAMICODE') === 'PRIVATE') {
             <span class="text-neutral-600 text-sm flex items-center gap-1 cursor-not-allowed">
               {{ 'PROJECTS.PROJECT_STATUS.PRIVATE' | translate }}
             </span>
-          } @else if (('PROJECTS.GAMICODE.STATUS' | translate) === 'ONGOING') {
+          } @else if (getProjectStatus('GAMICODE') === 'ONGOING') {
             <span class="text-neutral-500 text-sm flex items-center gap-1">
               {{ 'PROJECTS.PROJECT_STATUS.ONGOING' | translate }}
             </span>
@@ -56,18 +56,18 @@
           <h3 class="text-2xl font-bold text-neutral-100">
             {{ 'PROJECTS.WEBSHOP.TITLE' | translate }}
           </h3>
-          @if (('PROJECTS.WEBSHOP.STATUS' | translate) === 'GITHUB') {
-            <a [href]="'PROJECTS.WEBSHOP.URL' | translate" 
+          @if (getProjectStatus('WEBSHOP') === 'GITHUB') {
+            <a [href]="getProjectUrl('WEBSHOP')" 
                target="_blank" 
                rel="noopener noreferrer"
                class="text-neutral-400 hover:text-neutral-100 text-sm transition-colors flex items-center gap-1">
               {{ 'PROJECTS.PROJECT_STATUS.GITHUB' | translate }}
             </a>
-          } @else if (('PROJECTS.WEBSHOP.STATUS' | translate) === 'PRIVATE') {
+          } @else if (getProjectStatus('WEBSHOP') === 'PRIVATE') {
             <span class="text-neutral-600 text-sm flex items-center gap-1 cursor-not-allowed">
               {{ 'PROJECTS.PROJECT_STATUS.PRIVATE' | translate }}
             </span>
-          } @else if (('PROJECTS.WEBSHOP.STATUS' | translate) === 'ONGOING') {
+          } @else if (getProjectStatus('WEBSHOP') === 'ONGOING') {
             <span class="text-neutral-500 text-sm flex items-center gap-1">
               {{ 'PROJECTS.PROJECT_STATUS.ONGOING' | translate }}
             </span>
@@ -98,18 +98,18 @@
           <h3 class="text-2xl font-bold text-neutral-100">
             {{ 'PROJECTS.SENSOR.TITLE' | translate }}
           </h3>
-          @if (('PROJECTS.SENSOR.STATUS' | translate) === 'GITHUB') {
-            <a [href]="'PROJECTS.SENSOR.URL' | translate" 
+          @if (getProjectStatus('SENSOR') === 'GITHUB') {
+            <a [href]="getProjectUrl('SENSOR')" 
                target="_blank" 
                rel="noopener noreferrer"
                class="text-neutral-400 hover:text-neutral-100 text-sm transition-colors flex items-center gap-1">
               {{ 'PROJECTS.PROJECT_STATUS.GITHUB' | translate }}
             </a>
-          } @else if (('PROJECTS.SENSOR.STATUS' | translate) === 'PRIVATE') {
+          } @else if (getProjectStatus('SENSOR') === 'PRIVATE') {
             <span class="text-neutral-600 text-sm flex items-center gap-1 cursor-not-allowed">
               {{ 'PROJECTS.PROJECT_STATUS.PRIVATE' | translate }}
             </span>
-          } @else if (('PROJECTS.SENSOR.STATUS' | translate) === 'ONGOING') {
+          } @else if (getProjectStatus('SENSOR') === 'ONGOING') {
             <span class="text-neutral-500 text-sm flex items-center gap-1">
               {{ 'PROJECTS.PROJECT_STATUS.ONGOING' | translate }}
             </span>
@@ -140,18 +140,18 @@
           <h3 class="text-2xl font-bold text-neutral-100">
             {{ 'PROJECTS.ACTIVE.TITLE' | translate }}
           </h3>
-          @if (('PROJECTS.ACTIVE.STATUS' | translate) === 'GITHUB') {
-            <a [href]="'PROJECTS.ACTIVE.URL' | translate" 
+          @if (getProjectStatus('ACTIVE') === 'GITHUB') {
+            <a [href]="getProjectUrl('ACTIVE')" 
                target="_blank" 
                rel="noopener noreferrer"
                class="text-neutral-400 hover:text-neutral-100 text-sm transition-colors flex items-center gap-1">
               {{ 'PROJECTS.PROJECT_STATUS.GITHUB' | translate }}
             </a>
-          } @else if (('PROJECTS.ACTIVE.STATUS' | translate) === 'PRIVATE') {
+          } @else if (getProjectStatus('ACTIVE') === 'PRIVATE') {
             <span class="text-neutral-600 text-sm flex items-center gap-1 cursor-not-allowed">
               {{ 'PROJECTS.PROJECT_STATUS.PRIVATE' | translate }}
             </span>
-          } @else if (('PROJECTS.ACTIVE.STATUS' | translate) === 'ONGOING') {
+          } @else if (getProjectStatus('ACTIVE') === 'ONGOING') {
             <span class="text-neutral-500 text-sm flex items-center gap-1">
               {{ 'PROJECTS.PROJECT_STATUS.ONGOING' | translate }}
             </span>
@@ -182,18 +182,18 @@
           <h3 class="text-2xl font-bold text-neutral-100">
             {{ 'PROJECTS.IOT.TITLE' | translate }}
           </h3>
-          @if (('PROJECTS.IOT.STATUS' | translate) === 'GITHUB') {
-            <a [href]="'PROJECTS.IOT.URL' | translate" 
+          @if (getProjectStatus('IOT') === 'GITHUB') {
+            <a [href]="getProjectUrl('IOT')" 
                target="_blank" 
                rel="noopener noreferrer"
                class="text-neutral-400 hover:text-neutral-100 text-sm transition-colors flex items-center gap-1">
               {{ 'PROJECTS.PROJECT_STATUS.GITHUB' | translate }}
             </a>
-          } @else if (('PROJECTS.IOT.STATUS' | translate) === 'PRIVATE') {
+          } @else if (getProjectStatus('IOT') === 'PRIVATE') {
             <span class="text-neutral-600 text-sm flex items-center gap-1 cursor-not-allowed">
               {{ 'PROJECTS.PROJECT_STATUS.PRIVATE' | translate }}
             </span>
-          } @else if (('PROJECTS.IOT.STATUS' | translate) === 'ONGOING') {
+          } @else if (getProjectStatus('IOT') === 'ONGOING') {
             <span class="text-neutral-500 text-sm flex items-center gap-1">
               {{ 'PROJECTS.PROJECT_STATUS.ONGOING' | translate }}
             </span>

@@ -21,8 +21,8 @@
     "TITLE": "Projekte",
     "PROJECT_STATUS": {
       "GITHUB": "GitHub ↗",
-      "PRIVATE": "🔒 Private Repo (Uni)",
-      "ONGOING": "🚧 In Development"
+      "PRIVATE": "🔒 Privates Repo (Uni)",
+      "ONGOING": "🚧 In Entwicklung"
     },
     "GAMICODE": {
       "TITLE": "gAmIcode (Ongoing)",
