@@ -7,9 +7,27 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
       <!-- Project 1: gAmIcode (Ongoing) -->
       <div class="group bg-neutral-900 border border-neutral-800 rounded-md p-6 hover:border-neutral-600 transition-colors">
-        <h3 class="text-2xl font-bold mb-2 text-neutral-100">
-          {{ 'PROJECTS.GAMICODE.TITLE' | translate }}
-        </h3>
+        <div class="flex justify-between items-start mb-2">
+          <h3 class="text-2xl font-bold text-neutral-100">
+            {{ 'PROJECTS.GAMICODE.TITLE' | translate }}
+          </h3>
+          @if (('PROJECTS.GAMICODE.STATUS' | translate) === 'GITHUB') {
+            <a [href]="'PROJECTS.GAMICODE.URL' | translate" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="text-neutral-400 hover:text-neutral-100 text-sm transition-colors flex items-center gap-1">
+              {{ 'PROJECTS.PROJECT_STATUS.GITHUB' | translate }}
+            </a>
+          } @else if (('PROJECTS.GAMICODE.STATUS' | translate) === 'PRIVATE') {
+            <span class="text-neutral-600 text-sm flex items-center gap-1 cursor-not-allowed">
+              {{ 'PROJECTS.PROJECT_STATUS.PRIVATE' | translate }}
+            </span>
+          } @else if (('PROJECTS.GAMICODE.STATUS' | translate) === 'ONGOING') {
+            <span class="text-neutral-500 text-sm flex items-center gap-1">
+              {{ 'PROJECTS.PROJECT_STATUS.ONGOING' | translate }}
+            </span>
+          }
+        </div>
         <p class="text-sm text-neutral-400 mb-4 font-mono">
           {{ 'PROJECTS.GAMICODE.SUBTITLE' | translate }}
         </p>
@@ -34,9 +52,27 @@
 
       <!-- Project 2: Webshop Microservices -->
       <div class="group bg-neutral-900 border border-neutral-800 rounded-md p-6 hover:border-neutral-600 transition-colors">
-        <h3 class="text-2xl font-bold mb-2 text-neutral-100">
-          {{ 'PROJECTS.WEBSHOP.TITLE' | translate }}
-        </h3>
+        <div class="flex justify-between items-start mb-2">
+          <h3 class="text-2xl font-bold text-neutral-100">
+            {{ 'PROJECTS.WEBSHOP.TITLE' | translate }}
+          </h3>
+          @if (('PROJECTS.WEBSHOP.STATUS' | translate) === 'GITHUB') {
+            <a [href]="'PROJECTS.WEBSHOP.URL' | translate" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="text-neutral-400 hover:text-neutral-100 text-sm transition-colors flex items-center gap-1">
+              {{ 'PROJECTS.PROJECT_STATUS.GITHUB' | translate }}
+            </a>
+          } @else if (('PROJECTS.WEBSHOP.STATUS' | translate) === 'PRIVATE') {
+            <span class="text-neutral-600 text-sm flex items-center gap-1 cursor-not-allowed">
+              {{ 'PROJECTS.PROJECT_STATUS.PRIVATE' | translate }}
+            </span>
+          } @else if (('PROJECTS.WEBSHOP.STATUS' | translate) === 'ONGOING') {
+            <span class="text-neutral-500 text-sm flex items-center gap-1">
+              {{ 'PROJECTS.PROJECT_STATUS.ONGOING' | translate }}
+            </span>
+          }
+        </div>
         <p class="text-sm text-neutral-400 mb-4 font-mono">
           {{ 'PROJECTS.WEBSHOP.SUBTITLE' | translate }}
         </p>
@@ -58,9 +94,27 @@
 
       <!-- Project 3: Distributed Sensor System -->
       <div class="group bg-neutral-900 border border-neutral-800 rounded-md p-6 hover:border-neutral-600 transition-colors">
-        <h3 class="text-2xl font-bold mb-2 text-neutral-100">
-          {{ 'PROJECTS.SENSOR.TITLE' | translate }}
-        </h3>
+        <div class="flex justify-between items-start mb-2">
+          <h3 class="text-2xl font-bold text-neutral-100">
+            {{ 'PROJECTS.SENSOR.TITLE' | translate }}
+          </h3>
+          @if (('PROJECTS.SENSOR.STATUS' | translate) === 'GITHUB') {
+            <a [href]="'PROJECTS.SENSOR.URL' | translate" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="text-neutral-400 hover:text-neutral-100 text-sm transition-colors flex items-center gap-1">
+              {{ 'PROJECTS.PROJECT_STATUS.GITHUB' | translate }}
+            </a>
+          } @else if (('PROJECTS.SENSOR.STATUS' | translate) === 'PRIVATE') {
+            <span class="text-neutral-600 text-sm flex items-center gap-1 cursor-not-allowed">
+              {{ 'PROJECTS.PROJECT_STATUS.PRIVATE' | translate }}
+            </span>
+          } @else if (('PROJECTS.SENSOR.STATUS' | translate) === 'ONGOING') {
+            <span class="text-neutral-500 text-sm flex items-center gap-1">
+              {{ 'PROJECTS.PROJECT_STATUS.ONGOING' | translate }}
+            </span>
+          }
+        </div>
         <p class="text-sm text-neutral-400 mb-4 font-mono">
           {{ 'PROJECTS.SENSOR.SUBTITLE' | translate }}
         </p>
@@ -82,9 +136,27 @@
 
       <!-- Project 4: ActiveTogether -->
       <div class="group bg-neutral-900 border border-neutral-800 rounded-md p-6 hover:border-neutral-600 transition-colors">
-        <h3 class="text-2xl font-bold mb-2 text-neutral-100">
-          {{ 'PROJECTS.ACTIVE.TITLE' | translate }}
-        </h3>
+        <div class="flex justify-between items-start mb-2">
+          <h3 class="text-2xl font-bold text-neutral-100">
+            {{ 'PROJECTS.ACTIVE.TITLE' | translate }}
+          </h3>
+          @if (('PROJECTS.ACTIVE.STATUS' | translate) === 'GITHUB') {
+            <a [href]="'PROJECTS.ACTIVE.URL' | translate" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="text-neutral-400 hover:text-neutral-100 text-sm transition-colors flex items-center gap-1">
+              {{ 'PROJECTS.PROJECT_STATUS.GITHUB' | translate }}
+            </a>
+          } @else if (('PROJECTS.ACTIVE.STATUS' | translate) === 'PRIVATE') {
+            <span class="text-neutral-600 text-sm flex items-center gap-1 cursor-not-allowed">
+              {{ 'PROJECTS.PROJECT_STATUS.PRIVATE' | translate }}
+            </span>
+          } @else if (('PROJECTS.ACTIVE.STATUS' | translate) === 'ONGOING') {
+            <span class="text-neutral-500 text-sm flex items-center gap-1">
+              {{ 'PROJECTS.PROJECT_STATUS.ONGOING' | translate }}
+            </span>
+          }
+        </div>
         <p class="text-sm text-neutral-400 mb-4 font-mono">
           {{ 'PROJECTS.ACTIVE.SUBTITLE' | translate }}
         </p>
@@ -106,9 +178,27 @@
 
       <!-- Project 5: IoT Environment Monitor -->
       <div class="group bg-neutral-900 border border-neutral-800 rounded-md p-6 hover:border-neutral-600 transition-colors">
-        <h3 class="text-2xl font-bold mb-2 text-neutral-100">
-          {{ 'PROJECTS.IOT.TITLE' | translate }}
-        </h3>
+        <div class="flex justify-between items-start mb-2">
+          <h3 class="text-2xl font-bold text-neutral-100">
+            {{ 'PROJECTS.IOT.TITLE' | translate }}
+          </h3>
+          @if (('PROJECTS.IOT.STATUS' | translate) === 'GITHUB') {
+            <a [href]="'PROJECTS.IOT.URL' | translate" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="text-neutral-400 hover:text-neutral-100 text-sm transition-colors flex items-center gap-1">
+              {{ 'PROJECTS.PROJECT_STATUS.GITHUB' | translate }}
+            </a>
+          } @else if (('PROJECTS.IOT.STATUS' | translate) === 'PRIVATE') {
+            <span class="text-neutral-600 text-sm flex items-center gap-1 cursor-not-allowed">
+              {{ 'PROJECTS.PROJECT_STATUS.PRIVATE' | translate }}
+            </span>
+          } @else if (('PROJECTS.IOT.STATUS' | translate) === 'ONGOING') {
+            <span class="text-neutral-500 text-sm flex items-center gap-1">
+              {{ 'PROJECTS.PROJECT_STATUS.ONGOING' | translate }}
+            </span>
+          }
+        </div>
         <p class="text-sm text-neutral-400 mb-4 font-mono">
           {{ 'PROJECTS.IOT.SUBTITLE' | translate }}
         </p>

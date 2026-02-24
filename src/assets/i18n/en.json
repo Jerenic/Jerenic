@@ -19,37 +19,48 @@
   },
   "PROJECTS": {
     "TITLE": "Projects",
+    "PROJECT_STATUS": {
+      "GITHUB": "GitHub ↗",
+      "PRIVATE": "🔒 Private Repo (Uni)",
+      "ONGOING": "🚧 In Development"
+    },
     "GAMICODE": {
       "TITLE": "gAmIcode (Ongoing)",
       "SUBTITLE": "Gamified Learning Platform",
-      "DESCRIPTION": "Conceptual and technical redesign of a programming task platform towards a modular, extensible architecture. Development of an automated evaluation system for Java (Unit Tests) and SQL, alongside containerization of execution environments."
+      "DESCRIPTION": "Conceptual and technical redesign of a programming task platform towards a modular, extensible architecture. Development of an automated evaluation system for Java (Unit Tests) and SQL, alongside containerization of execution environments.",
+      "STATUS": "ONGOING"
     },
     "WEBSHOP": {
       "TITLE": "Webshop Microservices",
       "SUBTITLE": "Full-Stack E-Commerce System",
-      "DESCRIPTION": "Development of a modular webshop architecture with separate services for inventory and order management. Focus on quality gates (Checkstyle, PMD) and automated CI/CD pipelines."
+      "DESCRIPTION": "Development of a modular webshop architecture with separate services for inventory and order management. Focus on quality gates (Checkstyle, PMD) and automated CI/CD pipelines.",
+      "STATUS": "PRIVATE"
     },
     "SENSOR": {
       "TITLE": "Distributed Sensor System",
       "SUBTITLE": "Cloud & Mobile Integration",
-      "DESCRIPTION": "End-to-end system for capturing and visualizing sensor data. Secure communication between backend and various clients as well as real-time visualization."
+      "DESCRIPTION": "End-to-end system for capturing and visualizing sensor data. Secure communication between backend and various clients as well as real-time visualization.",
+      "STATUS": "PRIVATE"
     },
     "ACTIVE": {
       "TITLE": "ActiveTogether",
       "SUBTITLE": "Reactive SPA for Course Management",
-      "DESCRIPTION": "Single Page Application for efficient management of sports courses. Modern state management with Signals and a responsive UI design for optimal user experience."
+      "DESCRIPTION": "Single Page Application for efficient management of sports courses. Modern state management with Signals and a responsive UI design for optimal user experience.",
+      "STATUS": "GITHUB",
+      "URL": "https://github.com/Jerenic/HID-HW2-UX-Review-and-Refactoring.git"
     },
     "IOT": {
       "TITLE": "IoT Environment Monitor",
       "SUBTITLE": "Python & MQTT",
-      "DESCRIPTION": "Networked measurement system based on JoyPi for monitoring environmental data. Stable pub/sub messaging to a central monitoring system."
+      "DESCRIPTION": "Networked measurement system based on JoyPi for monitoring environmental data. Stable pub/sub messaging to a central monitoring system.",
+      "STATUS": "PRIVATE"
     }
   },
   "SKILLS": {
     "TITLE": "Tech Stack & Skills",
     "BACKEND": ">_ Backend",
     "FRONTEND": ">_ Frontend",
-    "DEVOPS": ">_ DevOps & Tools"
+    "DEVOPS": ">_ DevOps, Tools & Methods"
   },
   "FOOTER": {
     "TITLE": "Let's get in touch.",
