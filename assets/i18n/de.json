@@ -19,37 +19,48 @@
   },
   "PROJECTS": {
     "TITLE": "Projekte",
+    "PROJECT_STATUS": {
+      "GITHUB": "GitHub ↗",
+      "PRIVATE": "🔒 Private Repo (Uni)",
+      "ONGOING": "🚧 In Development"
+    },
     "GAMICODE": {
       "TITLE": "gAmIcode (Ongoing)",
       "SUBTITLE": "Gamified Learning Platform",
-      "DESCRIPTION": "Konzeptionelles und technisches Redesign einer Plattform für Programmieraufgaben hin zu einer modularen, erweiterbaren Architektur. Entwicklung eines automatisierten Evaluierungssystems für Java (Unit Tests) und SQL sowie Containerisierung der Ausführungsumgebungen."
+      "DESCRIPTION": "Konzeptionelles und technisches Redesign einer Plattform für Programmieraufgaben hin zu einer modularen, erweiterbaren Architektur. Entwicklung eines automatisierten Evaluierungssystems für Java (Unit Tests) und SQL sowie Containerisierung der Ausführungsumgebungen.",
+      "STATUS": "ONGOING"
     },
     "WEBSHOP": {
       "TITLE": "Webshop Microservices",
       "SUBTITLE": "Full-Stack E-Commerce System",
-      "DESCRIPTION": "Entwicklung einer modularen Webshop-Architektur mit getrennten Services für Inventar und Bestellwesen. Fokus auf Quality Gates (Checkstyle, PMD) und automatisierte CI/CD-Pipelines."
+      "DESCRIPTION": "Entwicklung einer modularen Webshop-Architektur mit getrennten Services für Inventar und Bestellwesen. Fokus auf Quality Gates (Checkstyle, PMD) und automatisierte CI/CD-Pipelines.",
+      "STATUS": "PRIVATE"
     },
     "SENSOR": {
       "TITLE": "Distributed Sensor System",
       "SUBTITLE": "Cloud & Mobile Integration",
-      "DESCRIPTION": "End-to-End System zur Erfassung und Visualisierung von Sensordaten. Sichere Kommunikation zwischen Backend und verschiedenen Clients sowie Echtzeit-Visualisierung."
+      "DESCRIPTION": "End-to-End System zur Erfassung und Visualisierung von Sensordaten. Sichere Kommunikation zwischen Backend und verschiedenen Clients sowie Echtzeit-Visualisierung.",
+      "STATUS": "PRIVATE"
     },
     "ACTIVE": {
       "TITLE": "ActiveTogether",
       "SUBTITLE": "Reactive SPA für Kursverwaltung",
-      "DESCRIPTION": "Single Page Application zur effizienten Verwaltung von Sportkursen. Modernes State-Management mit Signals und ein responsives UI-Design für optimale User Experience."
+      "DESCRIPTION": "Single Page Application zur effizienten Verwaltung von Sportkursen. Modernes State-Management mit Signals und ein responsives UI-Design für optimale User Experience.",
+      "STATUS": "GITHUB",
+      "URL": "https://github.com/Jerenic/HID-HW2-UX-Review-and-Refactoring.git"
     },
     "IOT": {
       "TITLE": "IoT Environment Monitor",
       "SUBTITLE": "Python & MQTT",
-      "DESCRIPTION": "Vernetztes Messsystem auf Basis des JoyPi zur Überwachung von Umgebungsdaten. Stabiles Pub/Sub-Messaging an ein zentrales Monitoring-System."
+      "DESCRIPTION": "Vernetztes Messsystem auf Basis des JoyPi zur Überwachung von Umgebungsdaten. Stabiles Pub/Sub-Messaging an ein zentrales Monitoring-System.",
+      "STATUS": "PRIVATE"
     }
   },
   "SKILLS": {
     "TITLE": "Tech Stack & Skills",
     "BACKEND": ">_ Backend",
     "FRONTEND": ">_ Frontend",
-    "DEVOPS": ">_ DevOps & Tools"
+    "DEVOPS": ">_ DevOps, Tools & Methoden"
   },
   "FOOTER": {
     "TITLE": "Lass uns schreiben.",
