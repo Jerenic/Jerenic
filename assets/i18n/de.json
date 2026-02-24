@@ -19,6 +19,11 @@
   },
   "PROJECTS": {
     "TITLE": "Projekte",
+    "GAMICODE": {
+      "TITLE": "gAmIcode (Ongoing)",
+      "SUBTITLE": "Gamified Learning Platform",
+      "DESCRIPTION": "Konzeptionelles und technisches Redesign einer Plattform für Programmieraufgaben hin zu einer modularen, erweiterbaren Architektur. Entwicklung eines automatisierten Evaluierungssystems für Java (Unit Tests) und SQL sowie Containerisierung der Ausführungsumgebungen."
+    },
     "WEBSHOP": {
       "TITLE": "Webshop Microservices",
       "SUBTITLE": "Full-Stack E-Commerce System",
@@ -52,8 +57,8 @@
     "EMAIL": "Email senden",
     "GITHUB": "GitHub Profil",
     "CV_DOWNLOAD": "Lebenslauf herunterladen:",
-    "CV_AT": "CV (Österreich)",
-    "CV_DACH": "CV (DACH)",
+    "CV_AT": "CV (German)",
+    "CV_DACH": "CV (English)",
     "CV_EN": "CV (International)",
     "COPYRIGHT": "© 2026 Jeremy Nicolas Heißenberger. Built with Angular 17 & Tailwind CSS."
   }
