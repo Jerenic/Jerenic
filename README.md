@@ -1,5 +1,8 @@
 ## Hi there 👋
 
+Software Engineering Student | XR / VR enthusiast  
+Interested in immersive systems, spatial computing and interactive simulations
+
 <!--
 **Jerenic/Jerenic** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
