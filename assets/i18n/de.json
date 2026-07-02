@@ -3,73 +3,100 @@
     "TERMINAL": "terminal",
     "WHOAMI": "whoami",
     "CAT_ABOUT": "cat about.txt",
-    "ROLE": "Software Engineering Student",
-    "DESCRIPTION": "Building modern web applications",
+    "ROLE": "Software Engineering Student · FH Burgenland",
+    "DESCRIPTION": "Backend · Verteilte Systeme · Experimentelle Interfaces",
+    "STATUS_CMD": "./status --next",
+    "AVAILABILITY": "Offen für Praktikum & Junior-Rollen ab September 2026",
     "VIEW_PROJECTS": "> view_projects",
     "CONTACT_ME": "> contact_me"
   },
   "ABOUT": {
     "TITLE": "Über mich",
-    "NAME": "Jeremy Heissenberger",
-    "SUBTITLE": "Software Engineering Student | Java Backend & Angular",
-    "BIO": "Ich bin ein motivierter angehender Softwareentwickler mit Schwerpunkt auf Java-Backend und modernen Web-Technologien. Durch intensive Hochschulprojekte an der FH Burgenland habe ich praktische Erfahrung in der Entwicklung von Microservices und reaktiven Frontends gesammelt. Aktuell suche ich ein Praktikum oder eine Junior-Position, um meine Kenntnisse in professionellen CI/CD-Umgebungen einzubringen und reale Projekte voranzutreiben.",
+    "SECTION_LABEL": "whoami",
+    "NAME": "Jeremy Heißenberger",
+    "SUBTITLE": "Software Engineering und vernetzte Systeme · FH Burgenland",
+    "BIO": "Ich bin Software-Engineering-Student an der FH Burgenland mit Fokus auf Backend-Entwicklung, verteilte Systeme, Web-Technologien und experimentelle Interfaces. Besonders spannend finde ich die Schnittstelle zwischen Software, Simulation, VR/XR und Brain-Computer-Interfaces.",
+    "BIO_2": "In FH- und Eigenprojekten arbeite ich am liebsten dort, wo saubere Architektur, Tests und CI/CD auf ungewöhnliche Ideen treffen – vom verteilten Command-Center-System bis zum EEG-gesteuerten Prototyp.",
     "TAG_JAVA": "> Java / Spring Boot",
-    "TAG_ANGULAR": "> Angular / RxJS",
-    "TAG_DOCKER": "> Docker / CI/CD"
+    "TAG_DISTRIBUTED": "> Distributed Systems / Docker",
+    "TAG_EXPERIMENTAL": "> VR/XR & BCI-Experimente"
   },
   "PROJECTS": {
     "TITLE": "Projekte",
+    "SECTION_LABEL": "ls ./projects",
+    "CATEGORIES": {
+      "FEATURED": "Featured Projects",
+      "EXPERIMENTAL": "Experimental · BCI & Vision",
+      "QUALITY": "Software Quality & Infrastructure",
+      "UNIVERSITY": "Weitere FH-Projekte"
+    },
     "PROJECT_STATUS": {
       "GITHUB": "GitHub ↗",
-      "PRIVATE": "🔒 Privates Repo (Uni)",
-      "ONGOING": "🚧 In Entwicklung"
+      "PRIVATE": "Privates Repo (FH)",
+      "DONE_PRIVATE": "Abgeschlossen · FH-Projekt · Code privat"
+    },
+    "TEVS": {
+      "TITLE": "TEVS Command Center",
+      "SUBTITLE": "Verteiltes Status- & Command-Center-System",
+      "DESCRIPTION": "Verteiltes System aus drei Flask-Statusknoten hinter einem zentralen NGINX-HTTPS-Gateway, orchestriert mit Docker Compose. Jeder Knoten persistiert lokal in SQLite und repliziert Änderungen per REST an seine Peers – mit Last-Writer-Wins-Konfliktauflösung, Bootstrapping/Initial-Sync, Retry-Queue und Tombstone-Deletes. Dazu ein Frontend mit Leaflet-Karte und automatisierte Tests."
     },
     "GAMICODE": {
-      "TITLE": "gAmIcode (Ongoing)",
+      "TITLE": "gAmIcode",
       "SUBTITLE": "Gamified Learning Platform",
-      "DESCRIPTION": "Konzeptionelles und technisches Redesign einer Plattform für Programmieraufgaben hin zu einer modularen, erweiterbaren Architektur. Entwicklung eines automatisierten Evaluierungssystems für Java (Unit Tests) und SQL sowie Containerisierung der Ausführungsumgebungen.",
-      "STATUS": "ONGOING"
-    },
-    "WEBSHOP": {
-      "TITLE": "Webshop Microservices",
-      "SUBTITLE": "Full-Stack E-Commerce System",
-      "DESCRIPTION": "Entwicklung einer modularen Webshop-Architektur mit getrennten Services für Inventar und Bestellwesen. Fokus auf Quality Gates (Checkstyle, PMD) und automatisierte CI/CD-Pipelines.",
-      "STATUS": "PRIVATE"
-    },
-    "SENSOR": {
-      "TITLE": "Distributed Sensor System",
-      "SUBTITLE": "Cloud & Mobile Integration",
-      "DESCRIPTION": "End-to-End System zur Erfassung und Visualisierung von Sensordaten. Sichere Kommunikation zwischen Backend und verschiedenen Clients sowie Echtzeit-Visualisierung.",
-      "STATUS": "PRIVATE"
+      "DESCRIPTION": "Abgeschlossenes konzeptionelles und technisches Redesign einer gamifizierten Lernplattform für Programmieraufgaben – hin zu einer modularen, erweiterbaren Architektur. Umfasst ein automatisiertes Evaluierungssystem, containerisierte Ausführungsumgebungen für Java und SQL sowie Tests."
     },
     "ACTIVE": {
       "TITLE": "ActiveTogether",
-      "SUBTITLE": "Reactive SPA für Kursverwaltung",
-      "DESCRIPTION": "Single Page Application zur effizienten Verwaltung von Sportkursen. Modernes State-Management mit Signals und ein responsives UI-Design für optimale User Experience.",
-      "STATUS": "GITHUB",
-      "URL": "https://github.com/Jerenic/HID-HW2-UX-Review-and-Refactoring.git"
+      "SUBTITLE": "Angular-SPA für Kursverwaltung",
+      "DESCRIPTION": "Single Page Application zur Verwaltung von Sportkursen. Umgesetzt mit modernen reaktiven UI-Patterns in Angular – Signals und RxJS für das State-Handling – und einem responsiven Interface."
+    },
+    "NEUROFLOW": {
+      "TITLE": "NeuroFlow",
+      "SUBTITLE": "BCI- & Biosignal-Interaktionsexperimente",
+      "DESCRIPTION": "Experimentelle Python/Pygame-Prototypen für EXG/EEG-Steuerung über BrainFlow mit NeuroPawn-Hardware. Enthält ein Focus-Ball-Spiel, bei dem gemessene Aktivierung einen Ball durch einen Tunnel bewegt, sowie einen früheren Pong-Prototyp auf Basis von Blinzel- und Kiefer-Events. Ein frühes BCI-Interaktionsexperiment – keine Medizinsoftware."
+    },
+    "VISION": {
+      "TITLE": "Machine Vision Essentials",
+      "SUBTITLE": "Objekterkennung & Counting mit YOLO",
+      "DESCRIPTION": "Computer-Vision-Projekt zum Erkennen und Zählen von Objekten: eigener Datensatz, Annotationen mit Label Studio, YOLO-Training mit Augmentierung, Evaluation, Oriented Bounding Boxes und Realtime-Inferenz über die Webcam."
+    },
+    "SQT": {
+      "TITLE": "SoftwareQualityTest",
+      "SUBTITLE": "Quality Engineering mit Java & Spring Boot",
+      "DESCRIPTION": "Java/Spring-Boot-Projekt mit Fokus auf CI, statische Analyse und Testautomatisierung: Gradle, Java 21, Flyway-Migrationen und Integrationstests mit Testcontainers/PostgreSQL. Quality Gates über Spotless, Checkstyle, PMD, SpotBugs, Architekturtests, Hadolint und Git Hooks."
+    },
+    "WEBSHOP": {
+      "TITLE": "Webshop Microservices",
+      "SUBTITLE": "Full-Stack E-Commerce-System",
+      "DESCRIPTION": "Modulare Webshop-Architektur mit getrennten Services für Inventar und Bestellwesen. Fokus auf Quality Gates (Checkstyle, PMD) und automatisierte CI/CD-Pipelines."
+    },
+    "SENSOR": {
+      "TITLE": "Distributed Sensor System",
+      "SUBTITLE": "Cloud- & Mobile-Integration",
+      "DESCRIPTION": "End-to-End-System zur Erfassung und Visualisierung von Sensordaten. Sichere Kommunikation zwischen Backend und verschiedenen Clients sowie Echtzeit-Visualisierung."
     },
     "IOT": {
       "TITLE": "IoT Environment Monitor",
       "SUBTITLE": "Python & MQTT",
-      "DESCRIPTION": "Vernetztes Messsystem auf Basis des JoyPi zur Überwachung von Umgebungsdaten. Stabiles Pub/Sub-Messaging an ein zentrales Monitoring-System.",
-      "STATUS": "PRIVATE"
+      "DESCRIPTION": "Vernetztes Messsystem auf Basis des JoyPi zur Überwachung von Umgebungsdaten. Stabiles Pub/Sub-Messaging an ein zentrales Monitoring-System."
     }
   },
   "SKILLS": {
     "TITLE": "Tech Stack & Skills",
-    "BACKEND": ">_ Backend",
+    "SECTION_LABEL": "cat skills.json",
+    "BACKEND": ">_ Backend & Daten",
     "FRONTEND": ">_ Frontend",
-    "DEVOPS": ">_ DevOps, Tools & Methoden"
+    "DEVOPS": ">_ DevOps & Quality",
+    "EXPERIMENTAL": ">_ Experimental & BCI"
   },
   "FOOTER": {
     "TITLE": "Lass uns schreiben.",
-    "SUBTITLE": "Ich bin aktuell auf der Suche nach einem Praktikum oder einer Junior-Position. Mein Postfach ist immer offen!",
+    "SUBTITLE": "Ich suche ab September 2026 wieder nach einem Praktikum, einer Junior-Position oder einer Werkstudentenrolle im Bereich Software Engineering. Mein Postfach ist offen für spannende Projekte, Teams und Einstiegsmöglichkeiten.",
     "EMAIL": "Email senden",
     "GITHUB": "GitHub Profil",
     "CV_DOWNLOAD": "Lebenslauf herunterladen:",
-    "CV_AT": "CV (German)",
-    "CV_DACH": "CV (English)",
+    "CV_AT": "CV (Deutsch)",
+    "CV_DACH": "CV (Englisch)",
     "CV_EN": "CV (International)",
     "COPYRIGHT": "© 2026 Jeremy Nicolas Heißenberger. Built with Angular 17 & Tailwind CSS."
   }

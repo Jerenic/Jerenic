@@ -3,68 +3,95 @@
     "TERMINAL": "terminal",
     "WHOAMI": "whoami",
     "CAT_ABOUT": "cat about.txt",
-    "ROLE": "Software Engineering Student",
-    "DESCRIPTION": "Building modern web applications",
+    "ROLE": "Software Engineering Student · FH Burgenland",
+    "DESCRIPTION": "Backend · Distributed Systems · Experimental Interfaces",
+    "STATUS_CMD": "./status --next",
+    "AVAILABILITY": "Open for internships & junior roles starting September 2026",
     "VIEW_PROJECTS": "> view_projects",
     "CONTACT_ME": "> contact_me"
   },
   "ABOUT": {
     "TITLE": "About Me",
-    "NAME": "Jeremy Heissenberger",
-    "SUBTITLE": "Software Engineering Student | Java Backend & Angular",
-    "BIO": "I am a motivated aspiring software developer with a focus on Java backend and modern web technologies. Through intensive university projects at FH Burgenland, I have gained practical experience in developing microservices and reactive frontends. I am currently looking for an internship or junior position to apply my knowledge in professional CI/CD environments and advance real-world projects.",
+    "SECTION_LABEL": "whoami",
+    "NAME": "Jeremy Heißenberger",
+    "SUBTITLE": "Software Engineering and Networked Systems · FH Burgenland",
+    "BIO": "I am a software engineering student at FH Burgenland focusing on backend development, distributed systems, web technologies and experimental interfaces. What excites me most is the intersection of software, simulation, VR/XR and brain-computer interfaces.",
+    "BIO_2": "In university and personal projects, I love working where clean architecture, testing and CI/CD meet unusual ideas – from distributed command-center systems to EEG-controlled prototypes.",
     "TAG_JAVA": "> Java / Spring Boot",
-    "TAG_ANGULAR": "> Angular / RxJS",
-    "TAG_DOCKER": "> Docker / CI/CD"
+    "TAG_DISTRIBUTED": "> Distributed Systems / Docker",
+    "TAG_EXPERIMENTAL": "> VR/XR & BCI Experiments"
   },
   "PROJECTS": {
     "TITLE": "Projects",
+    "SECTION_LABEL": "ls ./projects",
+    "CATEGORIES": {
+      "FEATURED": "Featured Projects",
+      "EXPERIMENTAL": "Experimental · BCI & Vision",
+      "QUALITY": "Software Quality & Infrastructure",
+      "UNIVERSITY": "More University Projects"
+    },
     "PROJECT_STATUS": {
       "GITHUB": "GitHub ↗",
-      "PRIVATE": "🔒 Private Repo (Uni)",
-      "ONGOING": "🚧 In Development"
+      "PRIVATE": "Private Repo (University)",
+      "DONE_PRIVATE": "Completed · University Project · Private Code"
+    },
+    "TEVS": {
+      "TITLE": "TEVS Command Center",
+      "SUBTITLE": "Distributed Status & Command-Center System",
+      "DESCRIPTION": "Distributed system of three Flask status nodes behind a central NGINX HTTPS gateway, orchestrated with Docker Compose. Each node persists locally to SQLite and replicates changes to its peers via REST – with last-writer-wins conflict resolution, bootstrapping/initial sync, a retry queue and tombstone deletes. Includes a frontend with a Leaflet map and automated tests."
     },
     "GAMICODE": {
-      "TITLE": "gAmIcode (Ongoing)",
+      "TITLE": "gAmIcode",
       "SUBTITLE": "Gamified Learning Platform",
-      "DESCRIPTION": "Conceptual and technical redesign of a programming task platform towards a modular, extensible architecture. Development of an automated evaluation system for Java (Unit Tests) and SQL, alongside containerization of execution environments.",
-      "STATUS": "ONGOING"
+      "DESCRIPTION": "Completed conceptual and technical redesign of a gamified learning platform for programming exercises – towards a modular, extensible architecture. Includes an automated evaluation system, containerized execution environments for Java and SQL, and tests."
+    },
+    "ACTIVE": {
+      "TITLE": "ActiveTogether",
+      "SUBTITLE": "Angular SPA for Course Management",
+      "DESCRIPTION": "Single page application for managing sports courses. Built with modern reactive UI patterns in Angular – Signals and RxJS for state handling – and a responsive interface."
+    },
+    "NEUROFLOW": {
+      "TITLE": "NeuroFlow",
+      "SUBTITLE": "BCI & Biosignal Interaction Experiments",
+      "DESCRIPTION": "Experimental Python/Pygame prototypes for EXG/EEG control via BrainFlow with NeuroPawn hardware. Includes a focus-ball game where detected activation moves a ball through a tunnel, plus an earlier Pong prototype based on blink and jaw events. An early BCI interaction experiment – not medical software."
+    },
+    "VISION": {
+      "TITLE": "Machine Vision Essentials",
+      "SUBTITLE": "Object Detection & Counting with YOLO",
+      "DESCRIPTION": "Computer vision project for detecting and counting objects: custom dataset, Label Studio annotations, YOLO training with augmentation, evaluation, oriented bounding boxes and real-time webcam inference."
+    },
+    "SQT": {
+      "TITLE": "SoftwareQualityTest",
+      "SUBTITLE": "Quality Engineering with Java & Spring Boot",
+      "DESCRIPTION": "Java/Spring Boot project focused on CI, static analysis and test automation: Gradle, Java 21, Flyway migrations and integration tests with Testcontainers/PostgreSQL. Quality gates via Spotless, Checkstyle, PMD, SpotBugs, architecture tests, Hadolint and Git hooks."
     },
     "WEBSHOP": {
       "TITLE": "Webshop Microservices",
       "SUBTITLE": "Full-Stack E-Commerce System",
-      "DESCRIPTION": "Development of a modular webshop architecture with separate services for inventory and order management. Focus on quality gates (Checkstyle, PMD) and automated CI/CD pipelines.",
-      "STATUS": "PRIVATE"
+      "DESCRIPTION": "Modular webshop architecture with separate services for inventory and order management. Focus on quality gates (Checkstyle, PMD) and automated CI/CD pipelines."
     },
     "SENSOR": {
       "TITLE": "Distributed Sensor System",
       "SUBTITLE": "Cloud & Mobile Integration",
-      "DESCRIPTION": "End-to-end system for capturing and visualizing sensor data. Secure communication between backend and various clients as well as real-time visualization.",
-      "STATUS": "PRIVATE"
-    },
-    "ACTIVE": {
-      "TITLE": "ActiveTogether",
-      "SUBTITLE": "Reactive SPA for Course Management",
-      "DESCRIPTION": "Single Page Application for efficient management of sports courses. Modern state management with Signals and a responsive UI design for optimal user experience.",
-      "STATUS": "GITHUB",
-      "URL": "https://github.com/Jerenic/HID-HW2-UX-Review-and-Refactoring.git"
+      "DESCRIPTION": "End-to-end system for capturing and visualizing sensor data. Secure communication between backend and various clients as well as real-time visualization."
     },
     "IOT": {
       "TITLE": "IoT Environment Monitor",
       "SUBTITLE": "Python & MQTT",
-      "DESCRIPTION": "Networked measurement system based on JoyPi for monitoring environmental data. Stable pub/sub messaging to a central monitoring system.",
-      "STATUS": "PRIVATE"
+      "DESCRIPTION": "Networked measurement system based on JoyPi for monitoring environmental data. Stable pub/sub messaging to a central monitoring system."
     }
   },
   "SKILLS": {
     "TITLE": "Tech Stack & Skills",
-    "BACKEND": ">_ Backend",
+    "SECTION_LABEL": "cat skills.json",
+    "BACKEND": ">_ Backend & Data",
     "FRONTEND": ">_ Frontend",
-    "DEVOPS": ">_ DevOps, Tools & Methods"
+    "DEVOPS": ">_ DevOps & Quality",
+    "EXPERIMENTAL": ">_ Experimental & BCI"
   },
   "FOOTER": {
     "TITLE": "Let's get in touch.",
-    "SUBTITLE": "I am currently looking for an internship or junior position. My inbox is always open!",
+    "SUBTITLE": "Starting September 2026, I will be looking for an internship, a junior position or a working-student role in software engineering. My inbox is open for exciting projects, teams and entry opportunities.",
     "EMAIL": "Send Email",
     "GITHUB": "GitHub Profile",
     "CV_DOWNLOAD": "Download Resume:",
