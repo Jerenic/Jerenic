@@ -27,7 +27,8 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/CNAME"
             ],
             "styles": [
               "src/styles.scss"
@@ -71,9 +72,15 @@
           "defaultConfiguration": "development"
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "dir": "dist/jerenic/browser"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
