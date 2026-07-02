@@ -1,222 +1,82 @@
-<section id="projects" class="py-20 bg-[#0a0a0a]">
-  <div class="container mx-auto px-4">
-    <h2 class="text-4xl font-bold mb-12 text-center text-neutral-100">
-      {{ 'PROJECTS.TITLE' | translate }}
-    </h2>
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-      <!-- Project 1: gAmIcode (Ongoing) -->
-      <div class="group bg-neutral-900 border border-neutral-800 rounded-md p-6 hover:border-neutral-600 transition-colors">
-        <div class="flex justify-between items-start mb-2">
-          <h3 class="text-2xl font-bold text-neutral-100">
-            {{ 'PROJECTS.GAMICODE.TITLE' | translate }}
-          </h3>
-          @if (getProjectStatus('GAMICODE') === 'GITHUB') {
-            <a [href]="getProjectUrl('GAMICODE')" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               class="text-neutral-400 hover:text-neutral-100 text-sm transition-colors flex items-center gap-1">
-              {{ 'PROJECTS.PROJECT_STATUS.GITHUB' | translate }}
-            </a>
-          } @else if (getProjectStatus('GAMICODE') === 'PRIVATE') {
-            <span class="text-neutral-600 text-sm flex items-center gap-1 cursor-not-allowed">
-              {{ 'PROJECTS.PROJECT_STATUS.PRIVATE' | translate }}
-            </span>
-          } @else if (getProjectStatus('GAMICODE') === 'ONGOING') {
-            <span class="text-neutral-500 text-sm flex items-center gap-1">
-              {{ 'PROJECTS.PROJECT_STATUS.ONGOING' | translate }}
-            </span>
-          }
-        </div>
-        <p class="text-sm text-neutral-400 mb-4 font-mono">
-          {{ 'PROJECTS.GAMICODE.SUBTITLE' | translate }}
-        </p>
-        <p class="text-neutral-400 leading-relaxed mb-6">
-          {{ 'PROJECTS.GAMICODE.DESCRIPTION' | translate }}
-        </p>
-        <div class="flex flex-wrap gap-2">
-          <span class="bg-neutral-900 border border-neutral-700 text-neutral-300 px-2 py-1 text-xs rounded-sm">
-            Node.js
-          </span>
-          <span class="bg-neutral-900 border border-neutral-700 text-neutral-300 px-2 py-1 text-xs rounded-sm">
-            React
-          </span>
-          <span class="bg-neutral-900 border border-neutral-700 text-neutral-300 px-2 py-1 text-xs rounded-sm">
-            MongoDB
-          </span>
-          <span class="bg-neutral-900 border border-neutral-700 text-neutral-300 px-2 py-1 text-xs rounded-sm">
-            Docker
-          </span>
-        </div>
-      </div>
-
-      <!-- Project 2: Webshop Microservices -->
-      <div class="group bg-neutral-900 border border-neutral-800 rounded-md p-6 hover:border-neutral-600 transition-colors">
-        <div class="flex justify-between items-start mb-2">
-          <h3 class="text-2xl font-bold text-neutral-100">
-            {{ 'PROJECTS.WEBSHOP.TITLE' | translate }}
-          </h3>
-          @if (getProjectStatus('WEBSHOP') === 'GITHUB') {
-            <a [href]="getProjectUrl('WEBSHOP')" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               class="text-neutral-400 hover:text-neutral-100 text-sm transition-colors flex items-center gap-1">
-              {{ 'PROJECTS.PROJECT_STATUS.GITHUB' | translate }}
-            </a>
-          } @else if (getProjectStatus('WEBSHOP') === 'PRIVATE') {
-            <span class="text-neutral-600 text-sm flex items-center gap-1 cursor-not-allowed">
-              {{ 'PROJECTS.PROJECT_STATUS.PRIVATE' | translate }}
-            </span>
-          } @else if (getProjectStatus('WEBSHOP') === 'ONGOING') {
-            <span class="text-neutral-500 text-sm flex items-center gap-1">
-              {{ 'PROJECTS.PROJECT_STATUS.ONGOING' | translate }}
-            </span>
-          }
-        </div>
-        <p class="text-sm text-neutral-400 mb-4 font-mono">
-          {{ 'PROJECTS.WEBSHOP.SUBTITLE' | translate }}
-        </p>
-        <p class="text-neutral-400 leading-relaxed mb-6">
-          {{ 'PROJECTS.WEBSHOP.DESCRIPTION' | translate }}
-        </p>
-        <div class="flex flex-wrap gap-2">
-          <span class="bg-neutral-900 border border-neutral-700 text-neutral-300 px-2 py-1 text-xs rounded-sm">
-            Spring Boot
-          </span>
-          <span class="bg-neutral-900 border border-neutral-700 text-neutral-300 px-2 py-1 text-xs rounded-sm">
-            PostgreSQL
-          </span>
-          <span class="bg-neutral-900 border border-neutral-700 text-neutral-300 px-2 py-1 text-xs rounded-sm">
-            Docker
-          </span>
-        </div>
-      </div>
-
-      <!-- Project 3: Distributed Sensor System -->
-      <div class="group bg-neutral-900 border border-neutral-800 rounded-md p-6 hover:border-neutral-600 transition-colors">
-        <div class="flex justify-between items-start mb-2">
-          <h3 class="text-2xl font-bold text-neutral-100">
-            {{ 'PROJECTS.SENSOR.TITLE' | translate }}
-          </h3>
-          @if (getProjectStatus('SENSOR') === 'GITHUB') {
-            <a [href]="getProjectUrl('SENSOR')" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               class="text-neutral-400 hover:text-neutral-100 text-sm transition-colors flex items-center gap-1">
-              {{ 'PROJECTS.PROJECT_STATUS.GITHUB' | translate }}
-            </a>
-          } @else if (getProjectStatus('SENSOR') === 'PRIVATE') {
-            <span class="text-neutral-600 text-sm flex items-center gap-1 cursor-not-allowed">
-              {{ 'PROJECTS.PROJECT_STATUS.PRIVATE' | translate }}
-            </span>
-          } @else if (getProjectStatus('SENSOR') === 'ONGOING') {
-            <span class="text-neutral-500 text-sm flex items-center gap-1">
-              {{ 'PROJECTS.PROJECT_STATUS.ONGOING' | translate }}
-            </span>
-          }
-        </div>
-        <p class="text-sm text-neutral-400 mb-4 font-mono">
-          {{ 'PROJECTS.SENSOR.SUBTITLE' | translate }}
-        </p>
-        <p class="text-neutral-400 leading-relaxed mb-6">
-          {{ 'PROJECTS.SENSOR.DESCRIPTION' | translate }}
-        </p>
-        <div class="flex flex-wrap gap-2">
-          <span class="bg-neutral-900 border border-neutral-700 text-neutral-300 px-2 py-1 text-xs rounded-sm">
-            Spring Cloud
-          </span>
-          <span class="bg-neutral-900 border border-neutral-700 text-neutral-300 px-2 py-1 text-xs rounded-sm">
-            Angular
-          </span>
-          <span class="bg-neutral-900 border border-neutral-700 text-neutral-300 px-2 py-1 text-xs rounded-sm">
-            Android (Capacitor)
-          </span>
-        </div>
-      </div>
-
-      <!-- Project 4: ActiveTogether -->
-      <div class="group bg-neutral-900 border border-neutral-800 rounded-md p-6 hover:border-neutral-600 transition-colors">
-        <div class="flex justify-between items-start mb-2">
-          <h3 class="text-2xl font-bold text-neutral-100">
-            {{ 'PROJECTS.ACTIVE.TITLE' | translate }}
-          </h3>
-          @if (getProjectStatus('ACTIVE') === 'GITHUB') {
-            <a [href]="getProjectUrl('ACTIVE')" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               class="text-neutral-400 hover:text-neutral-100 text-sm transition-colors flex items-center gap-1">
-              {{ 'PROJECTS.PROJECT_STATUS.GITHUB' | translate }}
-            </a>
-          } @else if (getProjectStatus('ACTIVE') === 'PRIVATE') {
-            <span class="text-neutral-600 text-sm flex items-center gap-1 cursor-not-allowed">
-              {{ 'PROJECTS.PROJECT_STATUS.PRIVATE' | translate }}
-            </span>
-          } @else if (getProjectStatus('ACTIVE') === 'ONGOING') {
-            <span class="text-neutral-500 text-sm flex items-center gap-1">
-              {{ 'PROJECTS.PROJECT_STATUS.ONGOING' | translate }}
-            </span>
-          }
-        </div>
-        <p class="text-sm text-neutral-400 mb-4 font-mono">
-          {{ 'PROJECTS.ACTIVE.SUBTITLE' | translate }}
-        </p>
-        <p class="text-neutral-400 leading-relaxed mb-6">
-          {{ 'PROJECTS.ACTIVE.DESCRIPTION' | translate }}
-        </p>
-        <div class="flex flex-wrap gap-2">
-          <span class="bg-neutral-900 border border-neutral-700 text-neutral-300 px-2 py-1 text-xs rounded-sm">
-            Angular (v17+)
-          </span>
-          <span class="bg-neutral-900 border border-neutral-700 text-neutral-300 px-2 py-1 text-xs rounded-sm">
-            RxJS
-          </span>
-          <span class="bg-neutral-900 border border-neutral-700 text-neutral-300 px-2 py-1 text-xs rounded-sm">
-            Signals
-          </span>
-        </div>
-      </div>
-
-      <!-- Project 5: IoT Environment Monitor -->
-      <div class="group bg-neutral-900 border border-neutral-800 rounded-md p-6 hover:border-neutral-600 transition-colors">
-        <div class="flex justify-between items-start mb-2">
-          <h3 class="text-2xl font-bold text-neutral-100">
-            {{ 'PROJECTS.IOT.TITLE' | translate }}
-          </h3>
-          @if (getProjectStatus('IOT') === 'GITHUB') {
-            <a [href]="getProjectUrl('IOT')" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               class="text-neutral-400 hover:text-neutral-100 text-sm transition-colors flex items-center gap-1">
-              {{ 'PROJECTS.PROJECT_STATUS.GITHUB' | translate }}
-            </a>
-          } @else if (getProjectStatus('IOT') === 'PRIVATE') {
-            <span class="text-neutral-600 text-sm flex items-center gap-1 cursor-not-allowed">
-              {{ 'PROJECTS.PROJECT_STATUS.PRIVATE' | translate }}
-            </span>
-          } @else if (getProjectStatus('IOT') === 'ONGOING') {
-            <span class="text-neutral-500 text-sm flex items-center gap-1">
-              {{ 'PROJECTS.PROJECT_STATUS.ONGOING' | translate }}
-            </span>
-          }
-        </div>
-        <p class="text-sm text-neutral-400 mb-4 font-mono">
-          {{ 'PROJECTS.IOT.SUBTITLE' | translate }}
-        </p>
-        <p class="text-neutral-400 leading-relaxed mb-6">
-          {{ 'PROJECTS.IOT.DESCRIPTION' | translate }}
-        </p>
-        <div class="flex flex-wrap gap-2">
-          <span class="bg-neutral-900 border border-neutral-700 text-neutral-300 px-2 py-1 text-xs rounded-sm">
-            Python
-          </span>
-          <span class="bg-neutral-900 border border-neutral-700 text-neutral-300 px-2 py-1 text-xs rounded-sm">
-            MQTT
-          </span>
-          <span class="bg-neutral-900 border border-neutral-700 text-neutral-300 px-2 py-1 text-xs rounded-sm">
-            Raspberry Pi
-          </span>
-        </div>
-      </div>
+<section id="projects" class="py-24 bg-[#0a0a0a]">
+  <div class="container mx-auto px-4 max-w-6xl">
+    <!-- Section heading -->
+    <div class="mb-16 text-center">
+      <p class="font-mono text-sm text-green-500 mb-3">
+        <span class="text-neutral-600">$</span> {{ 'PROJECTS.SECTION_LABEL' | translate }}
+      </p>
+      <h2 class="text-3xl md:text-4xl font-bold text-neutral-100 tracking-tight">
+        {{ 'PROJECTS.TITLE' | translate }}
+      </h2>
     </div>
+
+    @for (category of categories; track category) {
+      <div class="mb-16 last:mb-0">
+        <!-- Category heading -->
+        <div class="flex items-center gap-4 mb-6">
+          <h3 class="font-mono text-sm uppercase tracking-widest text-neutral-400 whitespace-nowrap">
+            {{ 'PROJECTS.CATEGORIES.' + category | translate }}
+          </h3>
+          <div class="h-px flex-1 bg-neutral-800"></div>
+        </div>
+
+        <div class="grid grid-cols-1 gap-6"
+             [class.md:grid-cols-2]="category !== 'UNIVERSITY'"
+             [class.md:grid-cols-3]="category === 'UNIVERSITY'">
+          @for (project of projectsFor(category); track project.key) {
+            <article
+              class="group flex flex-col rounded-lg border border-neutral-800 bg-neutral-900/60 p-6 transition-all duration-300 hover:border-neutral-600 hover:bg-neutral-900 hover:-translate-y-0.5">
+
+              <!-- Title + status badge -->
+              <div class="flex flex-wrap items-start justify-between gap-x-4 gap-y-2 mb-1">
+                <h4 class="text-xl font-bold text-neutral-100">
+                  {{ 'PROJECTS.' + project.key + '.TITLE' | translate }}
+                </h4>
+
+                @if (project.badge === 'GITHUB') {
+                  <a [href]="project.url"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     class="inline-flex items-center gap-1.5 rounded-full border border-neutral-700 px-3 py-1 text-xs font-mono text-neutral-300 transition-colors hover:border-green-500/60 hover:text-green-400">
+                    <svg class="h-3.5 w-3.5" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>
+                    </svg>
+                    {{ 'PROJECTS.PROJECT_STATUS.GITHUB' | translate }}
+                  </a>
+                } @else {
+                  <span
+                    class="inline-flex items-center gap-1.5 rounded-full border border-neutral-800 bg-neutral-950 px-3 py-1 text-xs font-mono text-neutral-500">
+                    <svg class="h-3.5 w-3.5" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                      <path d="M4 6V4a4 4 0 1 1 8 0v2h.5A1.5 1.5 0 0 1 14 7.5v6A1.5 1.5 0 0 1 12.5 15h-9A1.5 1.5 0 0 1 2 13.5v-6A1.5 1.5 0 0 1 3.5 6H4Zm1.5-2v2h5V4a2.5 2.5 0 0 0-5 0Z"/>
+                    </svg>
+                    {{ 'PROJECTS.PROJECT_STATUS.' + project.badge | translate }}
+                  </span>
+                }
+              </div>
+
+              <!-- Subtitle -->
+              <p class="text-sm text-neutral-500 font-mono mb-4">
+                {{ 'PROJECTS.' + project.key + '.SUBTITLE' | translate }}
+              </p>
+
+              <!-- Description -->
+              <p class="text-sm md:text-base text-neutral-400 leading-relaxed mb-6 flex-1">
+                {{ 'PROJECTS.' + project.key + '.DESCRIPTION' | translate }}
+              </p>
+
+              <!-- Tech tags -->
+              <div class="flex flex-wrap gap-2">
+                @for (tag of project.tags; track tag) {
+                  <span
+                    class="rounded border border-neutral-800 bg-neutral-950 px-2 py-1 text-xs font-mono text-neutral-400 transition-colors group-hover:border-neutral-700">
+                    {{ tag }}
+                  </span>
+                }
+              </div>
+            </article>
+          }
+        </div>
+      </div>
+    }
   </div>
 </section>

@@ -1,43 +1,63 @@
-<section class="h-screen flex items-center justify-center relative overflow-hidden bg-[#0a0a0a]">
+<section class="min-h-screen flex items-center justify-center relative overflow-hidden bg-[#0a0a0a] px-4 py-20">
+  <!-- Subtle background glow -->
+  <div class="pointer-events-none absolute inset-0 flex items-center justify-center" aria-hidden="true">
+    <div class="h-[32rem] w-[32rem] rounded-full bg-green-500/5 blur-3xl"></div>
+  </div>
+
   <!-- Main Content - Centered Terminal Window -->
-  <div class="container mx-auto px-4 text-center relative z-10">
+  <div class="container mx-auto text-center relative z-10">
     <!-- Terminal Window Effect -->
-    <div class="inline-block bg-neutral-900 border border-neutral-800 rounded-md shadow-sm p-8 md:p-12 max-w-4xl">
+    <div class="inline-block w-full max-w-4xl bg-neutral-900/80 backdrop-blur border border-neutral-800 rounded-lg shadow-2xl shadow-black/40 p-6 sm:p-8 md:p-12 text-left">
       <!-- Terminal Header -->
       <div class="flex items-center gap-2 mb-6 pb-4 border-b border-neutral-800">
         <div class="flex gap-2">
-          <div class="w-3 h-3 rounded-full bg-red-500"></div>
-          <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-          <div class="w-3 h-3 rounded-full bg-green-500"></div>
+          <div class="w-3 h-3 rounded-full bg-red-500/90"></div>
+          <div class="w-3 h-3 rounded-full bg-yellow-500/90"></div>
+          <div class="w-3 h-3 rounded-full bg-green-500/90"></div>
         </div>
-        <span class="text-xs text-neutral-400 ml-4 font-mono">{{ 'HERO.TERMINAL' | translate }}</span>
+        <span class="text-xs text-neutral-500 ml-4 font-mono">{{ 'HERO.TERMINAL' | translate }}</span>
       </div>
 
       <!-- Terminal Content -->
-      <div class="text-left font-mono">
+      <div class="font-mono">
         <div class="mb-4">
           <span class="text-green-500">$</span>
           <span class="text-neutral-400 ml-2">{{ 'HERO.WHOAMI' | translate }}</span>
         </div>
         <div class="mb-6">
-          <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
+          <h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold">
             <span class="text-neutral-100 typewriter" id="typewriter-text"></span>
-            <span class="animate-blink text-neutral-100">|</span>
+            <span class="animate-blink text-green-500">|</span>
           </h1>
         </div>
-        <div class="mb-4">
+        <div class="mb-3">
           <span class="text-green-500">$</span>
           <span class="text-neutral-400 ml-2">{{ 'HERO.CAT_ABOUT' | translate }}</span>
         </div>
-        <div class="text-neutral-400 text-lg md:text-xl mb-8">
-          <p class="mb-2">{{ 'HERO.ROLE' | translate }}</p>
+        <div class="text-neutral-400 text-base sm:text-lg md:text-xl mb-6">
+          <p class="mb-2 text-neutral-300">{{ 'HERO.ROLE' | translate }}</p>
           <p>{{ 'HERO.DESCRIPTION' | translate }}</p>
         </div>
-        <div class="flex gap-4 justify-center mt-8">
-          <a href="#projects" class="px-6 py-3 bg-neutral-900 border border-neutral-800 rounded-md text-neutral-100 hover:border-neutral-600 transition-colors font-mono text-sm whitespace-nowrap">
+        <div class="mb-3">
+          <span class="text-green-500">$</span>
+          <span class="text-neutral-400 ml-2">{{ 'HERO.STATUS_CMD' | translate }}</span>
+        </div>
+        <div class="mb-8">
+          <span class="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-green-500/10 px-3 py-1.5 text-xs sm:text-sm text-green-400">
+            <span class="relative flex h-2 w-2">
+              <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-60"></span>
+              <span class="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
+            </span>
+            {{ 'HERO.AVAILABILITY' | translate }}
+          </span>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+          <a href="#projects"
+             class="px-6 py-3 bg-neutral-100 text-neutral-900 rounded-md font-mono text-sm text-center font-semibold transition-colors hover:bg-white whitespace-nowrap">
             {{ 'HERO.VIEW_PROJECTS' | translate }}
           </a>
-          <a href="#contact" class="px-6 py-3 bg-neutral-900 border border-neutral-800 rounded-md text-neutral-100 hover:border-neutral-600 transition-colors font-mono text-sm whitespace-nowrap">
+          <a href="#contact"
+             class="px-6 py-3 bg-transparent border border-neutral-700 rounded-md text-neutral-100 hover:border-neutral-500 hover:bg-neutral-800/50 transition-colors font-mono text-sm text-center whitespace-nowrap">
             {{ 'HERO.CONTACT_ME' | translate }}
           </a>
         </div>
@@ -45,8 +65,8 @@
     </div>
   </div>
 
-  <!-- Scroll Indicator - Outside terminal, at bottom of screen -->
-  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-20">
+  <!-- Scroll Indicator -->
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-20 hidden sm:block">
     <div class="w-6 h-10 border-2 border-neutral-700 rounded-full flex justify-center">
       <div class="w-1 h-3 bg-neutral-400 rounded-full mt-2"></div>
     </div>

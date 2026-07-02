@@ -1,5 +1,11 @@
 import { Component } from '@angular/core';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
+import {
+  PROJECTS,
+  PROJECT_CATEGORIES,
+  Project,
+  ProjectCategory,
+} from '../../data/projects.data';
 
 @Component({
   selector: 'app-projects',
@@ -9,13 +15,9 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
-  constructor(private translate: TranslateService) {}
+  readonly categories = PROJECT_CATEGORIES;
 
-  getProjectStatus(projectKey: string): string {
-    return this.translate.instant(`PROJECTS.${projectKey}.STATUS`);
-  }
-
-  getProjectUrl(projectKey: string): string {
-    return this.translate.instant(`PROJECTS.${projectKey}.URL`);
+  projectsFor(category: ProjectCategory): Project[] {
+    return PROJECTS.filter((project) => project.category === category);
   }
 }

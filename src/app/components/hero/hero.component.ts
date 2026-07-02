@@ -9,7 +9,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent implements OnInit {
-  private textToType = 'Jeremy Heissenberger';
+  private textToType = 'Jeremy Heißenberger';
   private typingSpeed = 100;
   private deletingSpeed = 50;
   private pauseTime = 2000;
